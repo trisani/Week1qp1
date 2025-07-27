@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+    int array[100];
+    int size;
+    printf("enter the size of the array you want to create:");
+    scanf("%d",&size);
+    printf("enter the element");
+    for(int i=0;i<size;i++)
+    {
+        scanf("%d",&array[i]);
+    }
+    int num;
+    printf("enter the element you want to insert ata the end");
+    scanf("%d",&num);
+    array[size]=num;
+    size++;
+    for(int i=0;i<size;i++)
+    {
+        printf("%d",array[i]);
+    }
+    return 0;
+    
+}
